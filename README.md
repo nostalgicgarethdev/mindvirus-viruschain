@@ -1,3 +1,22 @@
+# Virus Chain (fork)
+
+Fork of [frotaur/mindvirus-viruschain](https://github.com/frotaur/mindvirus-viruschain) — paper [Mind Viruses](https://arxiv.org/abs/2608.10218).
+
+**Standalone (no keys, no Docker):**
+
+```bash
+# list every stripped example
+python3 scripts/run_alone.py
+
+# web viewer of those examples + published hop rates
+cd web && python3 -m http.server 8780
+# http://localhost:8780
+```
+
+Live hops still need API keys and the sandboxes below.
+
+---
+
 # Virus Chain
 
 This repository contains code and experiment configuration to reproduce the "Virus Chain" experiments from the paper "Mind Viruses: Self-Propagating Goals in Multi-Agent
