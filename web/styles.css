@@ -29,8 +29,8 @@ code { color: var(--brass); }
 }
 h1 {
   font-family: "Courier New", Courier, monospace;
-  font-size: clamp(40px, 8vw, 72px);
-  letter-spacing: 0.08em;
+  font-size: clamp(36px, 7vw, 64px);
+  letter-spacing: 0.04em;
   margin: 10px 0 12px;
 }
 .lead { max-width: 720px; color: #d8cfb6; }

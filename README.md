@@ -8,7 +8,7 @@ Fork of [frotaur/mindvirus-viruschain](https://github.com/frotaur/mindvirus-viru
 # list every stripped example
 python3 scripts/run_alone.py
 
-# web viewer of those examples + published hop rates
+# Virus Chain web viewer of those examples + published hop rates
 cd web && python3 -m http.server 8780
 # http://localhost:8780
 ```

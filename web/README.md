@@ -1,4 +1,4 @@
-# SHIBBOLETH web
+# Virus Chain web
 
 Standalone viewer for the `action_payload_stripped` campaign.
 
