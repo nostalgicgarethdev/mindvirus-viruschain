@@ -20,6 +20,33 @@
         paper, mysticism scraped off, hop rates from
         <a href="https://mindvirusdata.live/#action_payload_stripped">mindvirusdata.live</a>.
       </p>
+      <div class="ca" id="ca">
+        <div class="ca-label">CA</div>
+        <code class="ca-addr" id="ca-addr">jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump</code>
+        <button type="button" class="ca-copy" id="ca-copy" aria-label="Copy contract address">
+          copy
+        </button>
+        <div class="ca-links">
+          <a
+            href="https://pump.fun/coin/jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump"
+            target="_blank"
+            rel="noreferrer"
+            >pump.fun</a
+          >
+          <a
+            href="https://solscan.io/token/jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump"
+            target="_blank"
+            rel="noreferrer"
+            >solscan</a
+          >
+          <a
+            href="https://dexscreener.com/solana/jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump"
+            target="_blank"
+            rel="noreferrer"
+            >dexscreener</a
+          >
+        </div>
+      </div>
     </header>
 
     <nav class="tabs" id="tabs"></nav>
@@ -32,8 +59,27 @@
       <a href="https://github.com/nostalgicgarethdev/mindvirus-viruschain">this fork</a>
       · Upstream:
       <a href="https://github.com/frotaur/mindvirus-viruschain">frotaur/mindvirus-viruschain</a>
+      · CA:
+      <a href="https://pump.fun/coin/jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump"
+        >jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump</a
+      >
       · This is a viewer. It does not infect agents or run payloads.
     </footer>
     <script src="./app.js" type="module"></script>
+    <script>
+      const addr = "jZrNCTmsPpjCa5gTcn1eCqEMa96hoykW329eTA2pump";
+      const btn = document.getElementById("ca-copy");
+      btn?.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(addr);
+          btn.textContent = "copied";
+        } catch {
+          btn.textContent = "fail";
+        }
+        setTimeout(() => {
+          btn.textContent = "copy";
+        }, 1400);
+      });
+    </script>
   </body>
 </html>

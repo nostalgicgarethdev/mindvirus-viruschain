@@ -35,6 +35,52 @@ h1 {
 }
 .lead { max-width: 720px; color: #d8cfb6; }
 
+.ca {
+  margin-top: 22px;
+  max-width: 760px;
+  border: 1px solid var(--brass);
+  padding: 12px 14px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px 12px;
+  align-items: center;
+  background: #121310;
+}
+.ca-label {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.ca-addr {
+  font-size: 12px;
+  word-break: break-all;
+  color: var(--paper);
+}
+.ca-copy {
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--paper);
+  color: var(--ink);
+  border: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.ca-copy:hover { background: var(--brass); }
+.ca-links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  .ca { grid-template-columns: 1fr auto; }
+  .ca-label { grid-column: 1 / -1; }
+}
+
 .tabs {
   max-width: 980px;
   margin: 0 auto;
