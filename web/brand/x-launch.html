@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1600px; height: 900px; overflow: hidden; background: #0a0b0c; }
+  .f {
+    width: 1600px; height: 900px;
+    background: #0a0b0c;
+    color: #efe8d8;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    position: relative;
+    overflow: hidden;
+  }
+  .f::before {
+    content: "";
+    position: absolute; inset: 28px;
+    border: 1px solid #c4a056;
+    pointer-events: none;
+  }
+  .grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    padding: 80px 90px 90px 80px;
+    gap: 20px;
+  }
+  .mark {
+    width: 520px; height: 520px;
+    object-fit: cover;
+    justify-self: center;
+  }
+  .k {
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #c4a056;
+  }
+  h1 {
+    margin: 14px 0 18px;
+    font-size: 86px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 0.92;
+  }
+  .lead {
+    font-size: 22px;
+    line-height: 1.4;
+    color: #d8cfb6;
+    max-width: 620px;
+  }
+  .urls {
+    margin-top: 36px;
+    font-size: 16px;
+    color: #c4a056;
+  }
+  .urls div { margin-top: 6px; }
+</style>
+</head>
+<body>
+  <div class="f">
+    <div class="grid">
+      <img class="mark" src="file:///Users/garethlee/.grok/sessions/%2FUsers%2Fgarethlee/01a01049-6e38-7e03-afa1-deba41a7ace7/images/5.jpg" alt="" />
+      <div>
+        <div class="k">fork · stripped campaign</div>
+        <h1>Virus<br />Chain</h1>
+        <p class="lead">Chat dies. The file hops.<br />Four payloads. Real infection rates.</p>
+        <div class="urls">
+          <div>viruschain.website</div>
+          <div>github.com/nostalgicgarethdev/mindvirus-viruschain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
